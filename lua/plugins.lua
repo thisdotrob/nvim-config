@@ -37,10 +37,27 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+-- IMPORTANT: make sure to setup neodev BEFORE lspconfig
+require("neodev").setup({
+  library = { plugins = { "neotest" }, types = true },
+})
+
 require("mason").setup()
 require("mason-lspconfig").setup()
 
-require("lspconfig").solargraph.setup{}
+local lspconfig = require('lspconfig')
+
+lspconfig.lua_ls.setup({
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  }
+})
+
+lspconfig.solargraph.setup{}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -145,6 +162,18 @@ nnoremap <Leader>ft :FloatermNew --name=myfloat --height=0.8 --width=0.7 --autoc
 nnoremap t :FloatermToggle myfloat<CR>
 ]])
 vim.keymap.set('t', "<Esc>", "<C-\\><C-n>:q<CR>")
+
+local neotest = require("neotest")
+vim.keymap.set('n', '<Leader>mr', neotest.run.run)
+vim.keymap.set('n', '<Leader>mf', function()
+  neotest.run.run(vim.fn.expand('%'))
+end)
+vim.keymap.set('n', '<Leader>mo', neotest.output.open)
+vim.keymap.set('n', '<Leader>mp', neotest.output_panel.open)
+vim.keymap.set('n', '<Leader>ms', neotest.summary.open)
+vim.keymap.set('n', '<Leader>mw', function()
+  neotest.watch.toggle(vim.fn.expand('%'))
+end)
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
