@@ -177,6 +177,3 @@ vim.keymap.set('n', '<Leader>mw', function()
   neotest.watch.toggle(vim.fn.expand('%'))
 end)
 
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-vim.wo.relativenumber = true
