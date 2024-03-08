@@ -177,3 +177,4 @@ vim.keymap.set('n', '<Leader>mw', function()
   neotest.watch.toggle(vim.fn.expand('%'))
 end)
 
+vim.g['test#strategy'] = 'neovim'
