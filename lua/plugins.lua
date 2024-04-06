@@ -42,6 +42,7 @@ vim.keymap.set('n', '<leader>ff', function()
   builtin.find_files({hidden = true})
 end, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fs', builtin.grep_string, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
