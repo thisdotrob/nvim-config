@@ -8,4 +8,6 @@ vim.keymap.set("n", "<leader>sm", "<cmd>Telescope marks<cr>") -- marks
 vim.keymap.set("n", "<leader>sq", "<cmd>Telescope quickfix<cr>") -- quickfix list
 vim.keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- git commits
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- git status
+vim.keymap.set("n", "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<cr>") -- document diagnostics
+vim.keymap.set("n", "<leader>sD", "<cmd>Telescope diagnostics<cr>") -- workspace diagnostics
 
