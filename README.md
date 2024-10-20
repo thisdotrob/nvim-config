@@ -8,6 +8,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `lua/config/lazy.lua` - the first config loaded by `init.lua`. Installs the `lazy.nvim` plugin manager, sets up a couple of keymaps it needs and then initialises it, telling it to import all plugins from `lua/plugins/`.
 
+`lua/config/options.lua` - options set with `vim.opt.*`.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
