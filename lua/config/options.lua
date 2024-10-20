@@ -7,3 +7,6 @@ vim.opt.autoindent = true -- each new line inherits the indentation from the pre
 vim.opt.smartindent = true -- automatically adjust the indentation when editing certain file types
 vim.opt.shiftwidth = 2 -- Size of an indent
 vim.opt.shiftround = true -- align the indented lines to a multiple of the shift width
+vim.opt.number = true -- display line numbers
+vim.opt.relativenumber = true -- use relative line numbers
+vim.opt.cursorline = true -- highlight the current line
