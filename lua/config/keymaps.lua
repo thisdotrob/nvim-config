@@ -6,4 +6,6 @@ vim.keymap.set("n", "<leader>sw", "<cmd>Telescope grep_string<cr>") -- grep word
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>") -- buffers, most recently used first
 vim.keymap.set("n", "<leader>sm", "<cmd>Telescope marks<cr>") -- marks
 vim.keymap.set("n", "<leader>sq", "<cmd>Telescope quickfix<cr>") -- quickfix list
+vim.keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- git commits
+vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- git status
 
