@@ -3,4 +3,7 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- recently ope
 vim.keymap.set("n", "<leader>/", "<cmd>Telescope live_grep<cr>") -- grep (root dir)
 vim.keymap.set("n", "<leader>sb", "<cmd>Telescope current_buffer_fuzzy_find<cr>") -- grep in current buffer
 vim.keymap.set("n", "<leader>sw", "<cmd>Telescope grep_string<cr>") -- grep word (root dir)
+vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>") -- buffers, most recently used first
+vim.keymap.set("n", "<leader>sm", "<cmd>Telescope marks<cr>") -- marks
+vim.keymap.set("n", "<leader>sq", "<cmd>Telescope quickfix<cr>") -- quickfix list
 
