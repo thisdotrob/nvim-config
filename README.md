@@ -10,6 +10,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `lua/config/options.lua` - options set with `vim.opt.*`.
 
+`lua/config/keymaps.lua` - keymaps set with `vim.keymap.set(*)`.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
