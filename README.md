@@ -12,6 +12,14 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `lua/config/keymaps.lua` - keymaps set with `vim.keymap.set(*)`.
 
+`lua/plugins/` - the plugins to be loaded by `lazy.nvim`.
+
+## Plugins
+
+`telescope.nvim` (`lua/plugins/telescope.lua`) - fuzzy finder, used to find files and text in projects.
+
+`nvim-treesitter` (`lua/plugins/treesitter.lua`) - incremental parsing library.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
