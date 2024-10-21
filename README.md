@@ -59,9 +59,15 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 ## Links
 
 [lazy.folke.io/](https://lazy.folke.io/) - `lazy.nvim` plugin manager docs.
+
 [github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/](https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim) - example nvim config using `lazy.nvim`. Useful to see what plugins they use and how to configure them.
+
 [github.com/nvim-telescope/](https://github.com/nvim-telescope/telescope.nvim) - fuzzy finder docs.
+
 [github.com/nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - treesitter docs.
+
 [github.com/smoka7/hop.nvim](https://github.com/smoka7/hop.nvim) - hop.nvim docs.
+
 [github.com/stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - conform docs.
+
 [github.com/mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint) - nvim-lint docs.
