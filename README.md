@@ -26,6 +26,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `conform.nvim` (`lua/plugins/conform.lua`) - formatter.
 
+`nvim-lint` (`lua/plugins/lint.lua`) - linter.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
@@ -62,3 +64,4 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 [github.com/nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - treesitter docs.
 [github.com/smoka7/hop.nvim](https://github.com/smoka7/hop.nvim) - hop.nvim docs.
 [github.com/stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - conform docs.
+[github.com/mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint) - nvim-lint docs.
