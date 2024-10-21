@@ -24,6 +24,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `hop.nvim` (`lua/plugins/hop.lua`) - EasyMotion style document navigation.
 
+`conform.nvim` (`lua/plugins/conform.lua`) - formatter.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
@@ -59,3 +61,4 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 [github.com/nvim-telescope/](https://github.com/nvim-telescope/telescope.nvim) - fuzzy finder docs.
 [github.com/nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - treesitter docs.
 [github.com/smoka7/hop.nvim](https://github.com/smoka7/hop.nvim) - hop.nvim docs.
+[github.com/stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - conform docs.

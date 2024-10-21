@@ -1,3 +1,9 @@
+local M = {}
+
+function M.format()
+  require("conform").format({ async = true }) -- format current buffer
+end
+
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files (root dir)
 vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- recently opened files
 vim.keymap.set("n", "<leader>/", "<cmd>Telescope live_grep<cr>") -- grep (root dir)
@@ -15,6 +21,8 @@ vim.keymap.set('n', '<Leader>hc', "<cmd>HopChar2<cr>") -- easymotion highlight 1
 vim.keymap.set('n', '<Leader>hl', "<cmd>HopLineStart<cr>") -- easymotion highlight lines
 vim.keymap.set('n', '<Leader>h/', "<cmd>HopPattern<cr>") -- easymotion highlight matches for pattern entered
 vim.keymap.set('n', '<Leader>ha', "<cmd>HopAnywhereCurrentLine<cr>") -- easymotion highlight every character on current line
+vim.keymap.set('n', "<Leader>cf", function() require("conform").format({ async = true }) end) -- format current buffer
+vim.keymap.set("n", "<Leader>cf", M.format)
 
 -- commit when updating config for Ruby dev
 --vim.keymap.set("n", "<leader>fa", "<cmd>Telescope find_files cwd=./app<cr>") -- find files (app dir)
