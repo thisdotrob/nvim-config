@@ -22,6 +22,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `nvim-treesitter` (`lua/plugins/treesitter.lua`) - incremental parsing library.
 
+`hop.nvim` (`lua/plugins/hop.lua`) - EasyMotion style document navigation.
+
 ## Useful commands
 
 `:checkhealth lazy` - shows the status of the plugin manager.
@@ -29,6 +31,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 `:checkhealth telescope` - shows the status of the telescope fuzzy finder.
 
 `:checkhealth nvim-treesitter` - shows the status of the treesitter plugin.
+
+`:checkhealth hop` - shows the status of the hop easymotion plugin.
 
 `:Lazy restore` - updates all plugins to the version from the lockfile.
 
@@ -54,3 +58,4 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 [github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/](https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim) - example nvim config using `lazy.nvim`. Useful to see what plugins they use and how to configure them.
 [github.com/nvim-telescope/](https://github.com/nvim-telescope/telescope.nvim) - fuzzy finder docs.
 [github.com/nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - treesitter docs.
+[github.com/smoka7/hop.nvim](https://github.com/smoka7/hop.nvim) - hop.nvim docs.

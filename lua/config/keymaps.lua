@@ -10,6 +10,11 @@ vim.keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- git commi
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- git status
 vim.keymap.set("n", "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<cr>") -- document diagnostics
 vim.keymap.set("n", "<leader>sD", "<cmd>Telescope diagnostics<cr>") -- workspace diagnostics
+vim.keymap.set('n', '<Leader>hw', "<cmd>HopWord<cr>") -- easymotion highlight words
+vim.keymap.set('n', '<Leader>hc', "<cmd>HopChar2<cr>") -- easymotion highlight 1 or 2 characters entered
+vim.keymap.set('n', '<Leader>hl', "<cmd>HopLineStart<cr>") -- easymotion highlight lines
+vim.keymap.set('n', '<Leader>h/', "<cmd>HopPattern<cr>") -- easymotion highlight matches for pattern entered
+vim.keymap.set('n', '<Leader>ha', "<cmd>HopAnywhereCurrentLine<cr>") -- easymotion highlight every character on current line
 
 -- commit when updating config for Ruby dev
 --vim.keymap.set("n", "<leader>fa", "<cmd>Telescope find_files cwd=./app<cr>") -- find files (app dir)
