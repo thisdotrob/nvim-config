@@ -18,6 +18,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `:checkhealth telescope` - shows the status of the telescope fuzzy finder.
 
+`:checkhealth nvim-treesitter` - shows the status of the treesitter plugin.
+
 `:Lazy restore` - updates all plugins to the version from the lockfile.
 
 `:TSInstall <language to install>` - installs the treesitter parser for the language.
