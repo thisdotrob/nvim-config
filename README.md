@@ -14,6 +14,8 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `lua/plugins/` - the plugins to be loaded by `lazy.nvim`.
 
+`~/.local/share/nvim/lazy/` - location on disk of plugins installed by `lazy.nvim`.
+
 ## Plugins
 
 `telescope.nvim` (`lua/plugins/telescope.lua`) - fuzzy finder, used to find files and text in projects.
@@ -30,11 +32,21 @@ The structure of this Neovim config follows the "Structured Setup" version of th
 
 `:Lazy restore` - updates all plugins to the version from the lockfile.
 
+`:Lazy update` - updates all plugins.
+
 `:TSInstall <language to install>` - installs the treesitter parser for the language.
 
 `:TSInstallInfo` - list all available languages and their treesitter parser installation status.
 
 `:TSUpdate <language to update>` - updates the treesitter parser for the language (or all languages if not provided).
+
+## Commands to update Neovim, plugin manager and plugins
+
+`brew update && brew upgrade nvim`
+
+`:Lazy update`
+
+`:TSUpdate`
 
 ## Links
 
