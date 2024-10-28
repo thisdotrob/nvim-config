@@ -5,8 +5,9 @@ function M.format()
 end
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files (root dir)
-vim.keymap.set("n", "<leader>rfa", "<cmd>Telescope find_files cwd=./app<cr>") -- find files (app dir)
-vim.keymap.set("n", "<leader>rft", "<cmd>Telescope find_files cwd=./test<cr>") -- find files (test dir)
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope find_files hidden=true<cr>") -- find files (including hidden files)
+vim.keymap.set("n", "<leader>rfa", "<cmd>Telescope find_files cwd=./app<cr>") -- find files (Rails app dir)
+vim.keymap.set("n", "<leader>rft", "<cmd>Telescope find_files cwd=./test<cr>") -- find files (Rails test dir)
 vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- recently opened files
 vim.keymap.set("n", "<leader>/", "<cmd>Telescope live_grep<cr>") -- grep (root dir)
 vim.keymap.set("n", "<leader>sb", "<cmd>Telescope current_buffer_fuzzy_find<cr>") -- grep in current buffer
