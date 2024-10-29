@@ -4,6 +4,10 @@ function M.format()
   require("conform").format({ async = true }) -- format current buffer
 end
 
+function M.copy_file_path()
+  vim.fn.setreg('+', vim.fn.expand('%:.'))
+end
+
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files (root dir)
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope find_files hidden=true<cr>") -- find files (including hidden files)
 vim.keymap.set("n", "<leader>rfa", "<cmd>Telescope find_files cwd=./app<cr>") -- find files (Rails app dir)
@@ -25,3 +29,4 @@ vim.keymap.set("n", "<Leader>hl", "<cmd>HopLineStart<cr>") -- easymotion highlig
 vim.keymap.set("n", "<Leader>h/", "<cmd>HopPattern<cr>") -- easymotion highlight matches for pattern entered
 vim.keymap.set("n", "<Leader>ha", "<cmd>HopAnywhereCurrentLine<cr>") -- easymotion highlight every character on current line
 vim.keymap.set("n", "<Leader>cf", M.format)
+vim.keymap.set('n', '<leader>yf', M.copy_file_path) -- copy filepath of current buffer to system clipboard
